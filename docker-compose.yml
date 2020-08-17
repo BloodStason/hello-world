@@ -4,3 +4,5 @@ services:
     image: nginx:latest
     ports:
       - "80:80"
+    volumes:
+      - hello-world.html:/usr/share/nginx/html/index.html:ro
