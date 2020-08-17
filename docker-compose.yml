@@ -5,6 +5,10 @@ services:
     ports:
       - "80:80"
     volumes:
-      - .:/usr/share/nginx/html/
+      - type: volume
+        source: html
+        target: /usr/share/nginx/html
+        volume:
+          nocopy: true
 volumes:
-  - .:
+  - html:
