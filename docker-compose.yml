@@ -6,9 +6,9 @@ services:
       - "80:80"
     volumes:
       - type: volume
-        source: html
+        source: ./html
         target: /usr/share/nginx/html
         volume:
           nocopy: true
 volumes:
-  - html:
+  - ./html:/usr/share/nginx/html
