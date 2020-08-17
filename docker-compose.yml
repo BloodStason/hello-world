@@ -1,7 +1,7 @@
 version: '3'
 services:
   nginx:
-    image: nginx:latest
+    image: localhost:5000/my-nginx
     ports:
       - "80:80"
     volumes:
