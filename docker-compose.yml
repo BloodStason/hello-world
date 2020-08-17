@@ -4,11 +4,3 @@ services:
     image: nginx:latest
     ports:
       - "80:80"
-    volumes:
-      - type: volume
-        source: ./html
-        target: /usr/share/nginx/html
-        volume:
-          nocopy: true
-volumes:
-  - ./html:/usr/share/nginx/html
