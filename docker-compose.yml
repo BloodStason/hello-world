@@ -6,3 +6,5 @@ services:
       - "80:80"
     volumes:
       - hello-world.html:/usr/share/nginx/html/index.html:ro
+volumes:
+  - hello-world.html
